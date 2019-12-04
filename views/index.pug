@@ -1,0 +1,61 @@
+extends base.pug
+
+block content
+    p#greeting Hi, I'm Ivan
+    
+    img#picture(src='/pic/main3.jpg')
+    
+    p.logo.fade 
+        | About me?
+        br
+        | Well..
+
+    .about
+        p.about-item.quote.fade
+    
+            | Success is no accident. It is hard work, perseverance, learning, studying, sacrifice and most of all, love of what you are doing or learning to do.
+            br
+            strong Pele
+        
+        p.about-item.fade
+        
+            | Yes, the quote describes me best. 
+            | I am a software developer with more than 1 year of experience.
+            | Too little? Well, I prefer quality over quantity. 
+            br 
+            | I like to work hard, especially when I do something interesting and exciting.
+            | This is because my motto:
+            br
+            br
+            strong "If I can not do it today, I will do it tomorrow."
+            br 
+            br
+            | What does it mean? It means that I don't have an expression "Can-do attitude" in my CV,
+            br 
+            | because my attitude is "Will do" one.
+            br
+            br
+            | I am an Auckland Python User Group meetup visitor and a speaker.
+            br
+            | Topics I've covered so far:
+            br
+            ul
+                li Python and Django (based on my project)
+                li Memory management in Python (or how to reduce memory consumption)
+                li "Dunder" methods in Python (or "Find a difference between 'a + b' and 'a.__add__(b)'")
+
+    p.logo.fade 
+        | Expertise
+    
+    //- p 
+    //-     each val in data   
+    //-         p #{val.place}
+
+    .expertise.fade
+        each val in data
+            img.expertise.item(src=`${val.pic}`, alt=`${val.name}`)
+        
+        
+
+    
+    

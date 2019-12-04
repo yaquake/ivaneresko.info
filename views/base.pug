@@ -1,0 +1,40 @@
+doctype html
+html
+    head
+        link(rel="stylesheet" href="/css/styles.css" type="text/css")
+        script(src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js")
+        title= title
+    body
+        .container.navbar
+            h2(style='font-family: "Bitter", sans-serif;') IVAN ERESKO    
+            a.left(href='/') HOME
+            a(href='/study') EDUCATION
+            a(href='/experience') EXPERIENCE
+            a(href='/contacts') CONTACTS
+       
+                
+                
+
+
+        .container
+            block content
+    br
+    br
+    //- button#myBtn.float Click me!
+
+    //- div#myModal.modal
+    //-     div.modal-content
+    //-         span.close &times;
+    //-         p Some text in the Modal
+    
+    
+    p
+        .footer.footer-flex
+            //.footer-flex-item
+                img(src='pic/icons/facebook_footer.png', style='width: 10%;')
+                
+            .footer-flex-item
+                p#info 
+                
+    script(src='/js/functions.js')
+    script(src='/js/jquery.js')

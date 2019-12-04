@@ -1,0 +1,298 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Bitter&display=swap');
+
+
+@media all and (min-width: 801px) {
+    img#picture {
+        width: 70%;
+        border-radius: 4px;
+    }
+
+    .about-item {
+        text-align: justify;
+        width: 50vw;
+        padding-top: 10vh;
+    }
+    .unis {
+        padding: 10px;
+        width: 50vw;
+        text-align: justify;
+        margin: auto;
+        border-bottom: solid 1px gray;
+        
+        font-family: 'Bitter', sans-serif;
+    }
+}
+
+
+@media all and (max-width: 800px) {
+    .navbar { flex-direction: column; }
+    .navbar a.left {margin: auto;}
+    img#picture {width: 80%;}
+    .about-item {
+        text-align: justify;
+    }
+    .unis {
+        padding: 10px;
+        text-align: justify;
+        margin: auto;
+        border-bottom: solid 1px gray;
+        
+        font-family: 'Bitter', sans-serif;
+    }
+    
+}
+
+
+
+.container {
+    width: 80%;
+    margin: auto;
+}
+
+
+
+html {
+    position: relative;
+    min-height: 100%;
+}
+
+body {
+    margin: 0 0 60px;
+    text-align: center;
+    background-color: #F6F5F2;
+}
+
+.footer {
+    background-color: rgba(48, 58, 77, 0.904);
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 60px;
+    width: 100%;
+    overflow: hidden;
+}
+
+.footer-flex {
+    display: flex;
+    font-family: "Bitter", sans-serif;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.footer-flex-item {
+    color: white;
+    padding: 0 30px;
+}
+
+
+
+
+.main-info {
+    margin-top: 80px;
+    width: 80vw;
+}
+
+p#greeting {
+    padding: 0;
+    margin: 100px 0 70px 0;
+    font-size: 6vw;
+    font-family: "Bitter", sans-serif;
+    display: none;
+    
+}
+
+p.logo {
+    padding: 0;
+    margin: 100px 0 70px 0;
+    font-size: 6vw;
+    font-family: "Bitter", sans-serif;
+}
+
+
+.navbar {
+    
+    top: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 0px;
+  }
+
+  
+  
+  .navbar a {
+    font-family: 'Bitter', sans-serif;
+    color: #6181b0;
+    padding: 15px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1em;
+    transition: background-color .2s ease-in-out;
+  }
+
+  .navbar a.left {
+      margin-left: auto;
+  }
+  
+  .navbar a:hover {
+    background-color: #cc773c;
+    color: white;
+  }
+
+.float {
+    position:fixed;
+	width:60px;
+	height:60px;
+	bottom:80px;
+	right:80px;
+	background-color:rgb(65, 146, 221);
+	color:#FFF;
+	border-radius:50px;
+	text-align:center;
+    box-shadow: 2px 2px 3px #999;
+    cursor: pointer;
+}
+
+.navbar a.active {
+    background-color: #6181b0;
+    color: rgb(255, 255, 255);
+}
+
+
+
+
+
+/* .flex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 0px;
+} */
+
+/* .flex-item {
+    font-family: "Bitter", sans-serif;
+    padding: 0;
+    margin: 0;
+} */
+
+
+
+h1#name {
+    padding: 0;
+}
+
+.fade {
+    opacity: 0;
+}
+
+.about {
+    display: flex;
+    align-items: center;
+    font-family: "Bitter", sans-serif;
+    font-size: 1.25em;
+    line-height: 2em;
+    flex-direction: column;
+}
+
+
+
+.quote {
+    font-style: italic;
+    text-align: end;
+}
+
+
+
+
+
+.expertise {
+    display: inline-flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 80vw;
+    align-items:center;
+}
+
+.expertise .item {
+    margin: 20px;
+    padding: 0;
+    width: 150px;
+}
+
+
+
+.modal {
+    display: none; 
+    position: fixed; 
+    z-index: 1;    
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%; 
+    overflow: auto;  
+    background-color: rgba(0,0,0,0.4); 
+  }
+  
+  
+  .modal-content {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 60vw;
+  }
+  
+  
+  .close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+
+
+  /** study page **/
+.education {
+    text-align: center;
+}
+
+
+
+
+.place-name {
+    color: rgb(43, 137, 224);
+    text-transform: uppercase;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 22px;
+
+}
+
+.place-name:hover {
+    /* color: rgb(109, 173, 233); */
+    color: #cc773c;
+    text-decoration: underline;
+}
+
+.period {
+    font-style: italic;
+}
+
+.qualification {
+font-weight: bold;
+text-transform: uppercase;
+}

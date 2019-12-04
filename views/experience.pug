@@ -1,0 +1,32 @@
+extends base.pug
+
+block content
+        p.logo Experience
+        each val in data
+            .unis
+                p 
+                a.place-name(href=`${val.url}`, target='_blank') #{val.place}
+                p.period #{val.period}
+                p.qualification #{val.position}
+
+                ul
+                    each resp in val.responsibilities
+                        li #{resp}
+                if val.links
+                    p 
+                        strong Links: 
+                    ul
+                        each link in val.links
+                            li
+                                a(href=`${link}`, target='_blank') #{link}
+                if val.reference
+                    p   
+                        strong Reference letter:
+                        br
+                        a(href=`${val.reference}`) Download
+
+                br
+            br
+            br
+
+        
