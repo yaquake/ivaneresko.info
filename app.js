@@ -61,14 +61,7 @@ app.get('/experience', (req, res) => {
     })
 })
 
-app.get('/json', (req, res) => {
-    
-    let message = 'Access granted'
-    if (req.body.name !== 'Ivan') {
-        message = 'Access denied'
-    }
-    res.send(message)
-})
+
 
 
 

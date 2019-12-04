@@ -1,0 +1,24 @@
+extends base.pug
+
+block content
+    p.logo Education
+    
+    each val in data
+        .unis
+            p 
+            a.place-name(href=`${val.url}`, target='_blank') #{val.place}
+            p.period #{val.period}
+            p.qualification #{val.qualification}
+            if val.awards
+                p 
+                    strong Awards: 
+                    |#{val.awards}
+            if val.description
+                p 
+                    strong Description: 
+                    |#{val.description}
+            br
+        br
+        br
+
+    
