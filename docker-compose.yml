@@ -1,0 +1,29 @@
+version: "3.2"
+
+volumes:
+  mongovolume:
+    external: true
+services:
+  web:
+    build:
+      context: .
+      dockerfile: "Dockerfile"
+    image: website
+    container_name: website
+    restart: always
+    ports:
+      - "8080:4001"
+    volumes:
+      - .:/app
+    links:
+      - mongo
+  mongo:
+    container_name: mongo
+    image: mongodatabase
+    ports:
+      - "27017:27017"
+    volumes:
+      - type: volume
+        source: mongovolume
+        target: /data/db
+    command: mongod --auth

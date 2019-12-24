@@ -1,9 +1,6 @@
 const express = require('express')
 const path = require('path')
 
-
-
-
 const app = express()
 const connection = require('./connection')
 const about = require('./routes/about')
@@ -60,11 +57,5 @@ app.get('/experience', (req, res) => {
         
     })
 })
-
-
-
-
-
-
 
 app.listen(port)
